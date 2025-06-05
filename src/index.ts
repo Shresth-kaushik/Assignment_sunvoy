@@ -1,0 +1,1 @@
+const demo_url = 'https://challenge.sunvoy.com';
