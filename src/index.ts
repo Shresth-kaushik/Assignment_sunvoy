@@ -1,1 +1,1 @@
-const demo_url = 'https://challenge.sunvoy.com';
+const demo_ = 'https://challenge.sunvoy.com';
