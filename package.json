@@ -1,17 +1,31 @@
 {
   "name": "assignment_sunvoy",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --loader ts-node/esm src/index.ts",
+    "dev": "NODE_OPTIONS='--import ts-node/register' nodemon src/index.ts",
+    "build": "tsc",
+    "prod": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "jsdom": "^24.0.0",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^24.10.0"
+  },
   "devDependencies": {
-    "@types/node": "^22.15.29",
+    "@types/jsdom": "^21.1.1",
+    "@types/node": "^20.14.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
