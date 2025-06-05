@@ -20,6 +20,10 @@ API_PASSWORD=test
 npm run start
 
 
+## For output:
+
+Delete the data present in the user.json and then run the script "npm run start" 
+Here we are with the expected output :
 
 
 
